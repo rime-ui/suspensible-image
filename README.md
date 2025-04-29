@@ -11,3 +11,17 @@ This approach works **only with React 19**.
 - **Improved UX**: Users will see a skeleton or placeholder while the image loads, which avoids the blank screen effect.
 - **Faster Perceived Loading**: By using skeleton loaders, you make the loading process appear faster.
 - **Seamless Integration**: You can easily integrate a skeleton loader with the image component, without adding too much complexity.
+
+### How to Use:
+
+```jsx
+import { Suspense } from "react";
+import { Image , Skeleton } from "@rime-ui/suspensible-image";
+export default function App() {
+    return (
+       <Suspense fallback={<Skeleton />}>
+         <Image src="https://via.placeholder.com/150" />
+       </Supense>
+    );
+}
+```
