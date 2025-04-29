@@ -5,8 +5,8 @@
 When working with images in React, it's important to provide a smooth loading experience for users. One effective way to do this is by using a **skeleton loader** while the image is being fetched. This approach improves user experience by avoiding blank spaces and providing a placeholder until the image is ready.
 
 ### Important Note:
-This approach works **only with React 19**.
-Does not support SSR.
+- This approach works **only with React 19**.
+- Does not support SSR.
 
 ### Key Benefits:
 - **Improved UX**: Users will see a skeleton or placeholder while the image loads, which avoids the blank screen effect.
