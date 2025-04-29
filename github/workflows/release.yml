@@ -1,0 +1,55 @@
+name: Release Package
+
+on:
+  push:
+    # Trigger on pushing tags to the repo (e.g., v1.0.0)
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:  # Allows manual triggering from the GitHub UI
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # You can use any Node.js version you prefer
+          registry-url: 'https://registry.npmjs.org'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm install
+          
+      # Set up npm authentication
+      - name: Authenticate with npm
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} 
+
+      # Bump version and generate changelog using standard-version
+      - name: Bump version and generate changelog
+        run: |
+          npm run release  # This runs `standard-version`
+
+      # Publish to npm
+      - name: Publish to npm
+        run: |
+          npm publish --access public  # Make sure to publish it as public if needed
+
+      - name: Push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"
+          git commit -am "chore(release): ${{ github.event.release.tag_name }}"
+          git push --follow-tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
