@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          
+
       # Set up npm authentication
       - name: Authenticate with npm
         run: |
@@ -45,11 +45,13 @@ jobs:
         run: |
           npm publish --access public  # Make sure to publish it as public if needed
 
-      - name: Push changes
+      # Push changes and tags
+      - name: Push changes and tags
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions@github.com"
-          git commit -am "chore(release): ${{ github.event.release.tag_name }}"
+          git commit -am "chore(release): ${{ github.event.ref }}" || echo "No changes to commit"
+          git tag ${{ github.event.ref }}
           git push --follow-tags
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
