@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/rime-ui/suspensible-image/compare/v0.0.1...v0.0.2) (2025-04-29)
+
+
+### Bug Fixes
+
+* clean up release workflow by removing extra whitespace and improving commit message clarity ([0ef779d](https://github.com/rime-ui/suspensible-image/commit/0ef779d3f33ab00dab1954bdfe191a09df22bb49))
+* export Skeleton component in index file ([8d28c78](https://github.com/rime-ui/suspensible-image/commit/8d28c7886150580082eafb3f13ee5c84f0ea6415))
+
 ### 0.0.1 (2025-04-29)
 
 
