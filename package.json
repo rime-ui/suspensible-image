@@ -1,7 +1,7 @@
 {
     "name": "@rime-ui/suspensible-image",
     "private": false,
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "A React image component with smooth skeleton loading",
     "type": "module",
     "author": "Ahmed Hany",
