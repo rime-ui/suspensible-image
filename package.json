@@ -14,7 +14,8 @@
         "build": "tsup src/index.ts --format cjs,esm --dts",
         "dev": "tsup --watch",
         "lint": "eslint .",
-        "release": "standard-version"
+        "release": "standard-version",
+        "push": "git push --follow-tags origin main && npm publish"
     },
     "dependencies": {
         "react": "^19.0.0",
