@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/rime-ui/suspensible-image/compare/v0.0.7...v0.0.8) (2025-04-29)
+
+
+### Bug Fixes
+
+* update Skeleton component to use optional className prop and apply skeleton styles ([c8ee4e3](https://github.com/rime-ui/suspensible-image/commit/c8ee4e37e521b4b082bd4411c79b89761fed0065))
+
 ### [0.0.7](https://github.com/rime-ui/suspensible-image/compare/v0.0.6...v0.0.7) (2025-04-29)
 
 ### [0.0.6](https://github.com/rime-ui/suspensible-image/compare/v0.0.5...v0.0.6) (2025-04-29)
