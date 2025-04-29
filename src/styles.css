@@ -8,6 +8,13 @@
     }
 }
 
+.skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: #e4e4e7;
+    width: fit-content;
+}
+
 .shimmer-overlay {
     position: absolute;
     inset: 0;

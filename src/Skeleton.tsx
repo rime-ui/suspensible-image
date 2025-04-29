@@ -1,9 +1,9 @@
 import "./styles.css"
 
-export function Skeleton({ className = "" }: { className: string }) {
+export function Skeleton({ className }: { className?: string }) {
     return (
         <div
-            className={`relative overflow-hidden bg-zinc-200 w-fit ${className}`}
+            className={`skeleton ${className}`}
         >
             <div className="shimmer-overlay" />
         </div >
