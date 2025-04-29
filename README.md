@@ -16,7 +16,7 @@ This approach works **only with React 19**.
 
 ```jsx
 import { Suspense } from "react";
-import { Image , Skeleton } from "@rime-ui/suspensible-image";
+import { Image, Skeleton } from "@rime-ui/suspensible-image";
 export default function App() {
     return (
        <Suspense fallback={<Skeleton />}>
