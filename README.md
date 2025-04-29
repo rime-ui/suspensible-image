@@ -15,13 +15,13 @@ When working with images in React, it's important to provide a smooth loading ex
 
 ### How to Use:
 
-```jsx
+```tsx
 import { Suspense } from "react";
 import { Image, Skeleton } from "@rime-ui/suspensible-image";
 export default function App() {
     return (
        <Suspense fallback={<Skeleton />}>
-         <Image src="https://via.placeholder.com/150" />
+         <Image src="https://placehold.co/400" />
        </Supense>
     );
 }
