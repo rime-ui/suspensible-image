@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/rime-ui/suspensible-image/compare/v0.0.2...v0.0.3) (2025-04-29)
+
+
+### Features
+
+* add push script to release workflow in package.json ([aa1c845](https://github.com/rime-ui/suspensible-image/commit/aa1c845aa77859ef9711d9c131ccb1791b950a48))
+
+
+### Bug Fixes
+
+* add clarification about SSR support in README ([566d88a](https://github.com/rime-ui/suspensible-image/commit/566d88a2a7c2027a666934dd546de5ed03521db9))
+* correct typo in usage example and enhance README with additional details ([35b0d71](https://github.com/rime-ui/suspensible-image/commit/35b0d71ff6a060baefb9832f22bb2fb47272ff6a))
+* format import statement in usage example for consistency ([7b52698](https://github.com/rime-ui/suspensible-image/commit/7b526986aa98897b6649e142d848abc5ac096c38))
+* format important note section in README for consistency ([86e03a5](https://github.com/rime-ui/suspensible-image/commit/86e03a5e383689b0a4d525aac7944e61560fb335))
+
 ### [0.0.2](https://github.com/rime-ui/suspensible-image/compare/v0.0.1...v0.0.2) (2025-04-29)
 
 
