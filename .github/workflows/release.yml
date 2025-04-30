@@ -48,8 +48,8 @@ jobs:
       # Push changes and tags
       - name: Push changes and tags
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "rimex3"
+          git config user.email "faresahmed51857@gmail.com"
           git commit -am "chore(release): ${{ github.event.ref }}" || echo "No changes to commit"
           git tag ${{ github.event.ref }}
           git push --follow-tags
