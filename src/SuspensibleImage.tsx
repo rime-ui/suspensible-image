@@ -7,7 +7,7 @@ interface ImageProps extends ComponentPropsWithRef<"img"> {
     alt: string
 }
 
-export function Image({ src, alt, ...props }: ImageProps) {
+export function SuspensibleImage({ src, alt, ...props }: ImageProps) {
     const imagePromise = createImageResource(src);
     const image = use(imagePromise)
 

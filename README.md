@@ -5,14 +5,14 @@
 When working with images in React, it's important to provide a smooth loading experience for users. One effective way to do this is by using a **skeleton loader** while the image is being fetched. This approach improves user experience by avoiding blank spaces and providing a placeholder until the image is ready.
 
 ### Important Note:
-- This approach works **only with React 19**.
-- Does not support SSR.
+- React 19 Required.
+- No SSR Support.
 
 ### Key Benefits:
-- **Improved UX**: Users will see a skeleton or placeholder while the image loads, which avoids the blank screen effect.
-- **Faster Perceived Loading**: By using skeleton loaders, you make the loading process appear faster.
-- **Seamless Integration**: You can easily integrate a skeleton loader with the image component, without adding too much complexity.
-- Built-in Caching: The image component supports caching, storing previously loaded images to speed up future loads and reduce redundant network requests.
+- **Skeleton Loading**: Provides visual feedback during image loading with an animated shimmer effect.
+- **React 19 Suspense**: Uses React's latest Suspense API for handling asynchronous operations.
+- **Built-in Caching**: Stores previously loaded images to avoid redundant network requests
+
 
 ### How to Use:
 
