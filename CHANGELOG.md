@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/rime-ui/suspensible-image/compare/v0.0.10...v0.0.11) (2025-04-30)
+
+
+### Features
+
+* implement SuspensibleImage component with caching and loading optimization ([e9dd0dd](https://github.com/rime-ui/suspensible-image/commit/e9dd0dd857cee06ba3b2c1b0167a35e4141e53e6))
+
 ### [0.0.10](https://github.com/rime-ui/suspensible-image/compare/v0.0.9...v0.0.10) (2025-04-30)
 
 ### [0.0.9](https://github.com/rime-ui/suspensible-image/compare/v0.0.8...v0.0.9) (2025-04-29)
