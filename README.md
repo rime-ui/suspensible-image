@@ -18,14 +18,14 @@ When working with images in React, it's important to provide a smooth loading ex
 
 ```tsx
 import { Suspense } from "react";
-import { Image, Skeleton } from "@rime-ui/suspensible-image";
-import "@rime-ui/suspensible-image/dist/index.css"
+import { SuspensibleImage, Skeleton } from "@rime-ui/suspensible-image";
+import "@rime-ui/suspensible-image/dist/index.css";
 
-export default function App() {
-    return (
-       <Suspense fallback={<Skeleton />}>
-         <Image src="https://placehold.co/400" />
-       </Supense>
-    );
+function MyComponent() {
+  return (
+    <Suspense fallback={<Skeleton />}>
+      <SuspensibleImage src="https://example.com/image.jpg" alt="Description" />
+    </Suspense>
+  );
 }
 ```
