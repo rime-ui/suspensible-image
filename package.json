@@ -21,6 +21,11 @@
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rime-ui/suspensible-image"
+    },
+    "homepage": "https://github.com/rime-ui/suspensible-image#readme",
     "devDependencies": {
         "@commitlint/config-conventional": "^19.8.0",
         "@eslint/js": "^9.22.0",
